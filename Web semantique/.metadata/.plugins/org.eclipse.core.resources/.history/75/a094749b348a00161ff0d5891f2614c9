@@ -40,7 +40,7 @@ public class paf {
 		
 		// add the property
 		johnSmith.addProperty(VCARD.FN, fullName);
-		// On écrit maintenant le modèle en N-Triples dans un fichier
-		model.write(System.out, "N-TRIPLE");
+		// On écrit maintenant le modèle en XML dans un fichier
+		model.write(System.out, "RDF/XML-ABBREV");
 	}
 }

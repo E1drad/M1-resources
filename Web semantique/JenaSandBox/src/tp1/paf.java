@@ -7,6 +7,7 @@ import org.apache.jena.rdf.model.Model;
 import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.Property;
 import org.apache.jena.rdf.model.RDFNode;
+import org.apache.jena.rdf.model.ResIterator;
 import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.rdf.model.Statement;
 import org.apache.jena.rdf.model.StmtIterator;
@@ -23,36 +24,24 @@ public class paf {
     
 	public static void main (String args[]) {
 		// create an empty model
-	    Model model = ModelFactory.createDefaultModel();
-	   
-	    // use the FileManager to find the input file
+		Model model = ModelFactory.createDefaultModel();
+
 		InputStream in = FileManager.get().open(inputFileName);
 		if (in == null) {
-		    throw new IllegalArgumentException( "File: " + inputFileName + " not found");
+			throw new IllegalArgumentException( "File: " + inputFileName + " not found");
 		}
 		
 		// read the RDF/XML file
-		model.read(new InputStreamReader(in), "");
-		
-		// retrieve the Adam Smith vcard resource from the model
-		Resource vcard = model.getResource(johnSmithURI);
-		
-		// retrieve the value of the N property
-		Resource name = (Resource) vcard.getRequiredProperty(VCARD.N)
-		                                .getObject();
-		// retrieve the given name property
-		String fullName = vcard.getRequiredProperty(VCARD.FN)
-		                       .getString();
-		// add two nick name properties to vcard
-		vcard.addProperty(VCARD.NICKNAME, "Smithy")
-		 .addProperty(VCARD.NICKNAME, "Adman");
-		
-		// set up the output
-		System.out.println("The nicknames of \"" + fullName + "\" are:");
-		// list the nicknames
-		StmtIterator iter = vcard.listProperties(VCARD.NICKNAME);
-		while (iter.hasNext()) {
-			System.out.println("    " + iter.nextStatement().getObject().toString());
+		model.read( in, "");
+		// select all the resources with a VCARD.FN property
+		ResIterator iter = model.listResourcesWithProperty(VCARD.FN);
+		if (iter.hasNext()) {
+			System.out.println("The database contains vcards for:");
+			while (iter.hasNext()) {
+				System.out.println("  " + iter.nextResource().getRequiredProperty(VCARD.FN).getString() );
+			}
+		}else{
+		    System.out.println("No vcards were found in the database");
 		}
 	}
 }

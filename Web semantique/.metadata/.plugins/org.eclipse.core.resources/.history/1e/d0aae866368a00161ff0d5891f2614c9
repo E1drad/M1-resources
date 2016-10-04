@@ -20,18 +20,18 @@ public class paf {
 	static final String inputFileName = "src/tp1/vc-db-1.rdf";
 	
 	public static void main (String args[]) {
-		// créer un modèle vide
-		Model model = ModelFactory.createDefaultModel();
-		
-		// utiliser le FileManager pour trouver le fichier d'entrée
-		InputStream in = FileManager.get().open( inputFileName );
-		if (in == null) {
-			throw new IllegalArgumentException("Fichier: " + inputFileName + " non trouvé");
-		}
-		// lire le fichier RDF/XML
-		model.read(in, null);
-		
-		// l'écrire sur la sortie standard
-		model.write(System.out);
+	// créer un modèle vide
+	Model model = ModelFactory.createDefaultModel();
+	
+	// utiliser le FileManager pour trouver le fichier d'entrée
+	InputStream in = FileManager.get().open( inputFileName );
+	if (in == null) {
+		throw new IllegalArgumentException("Fichier: " + inputFileName + " non trouvé");
+	}
+	// lire le fichier RDF/XML
+	model.read(in, null);
+	
+	// l'écrire sur la sortie standard
+	model.write(System.out);
 	}
 }

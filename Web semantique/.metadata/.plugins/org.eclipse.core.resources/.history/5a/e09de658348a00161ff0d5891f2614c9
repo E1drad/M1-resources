@@ -40,6 +40,9 @@ public class paf {
 		
 		// add the property
 		johnSmith.addProperty(VCARD.FN, fullName);
+		model.write(System.out,"Turtle");
+		// liste des déclarations dans le modèle
+		StmtIterator iter = model.listStatements();
 		// maintenant on écrit le modèle sous forme XML dans un fichier
 		model.write(System.out);
 	}

@@ -40,7 +40,25 @@ public class paf {
 		
 		// add the property
 		johnSmith.addProperty(VCARD.FN, fullName);
-		// maintenant on écrit le modèle sous forme XML dans un fichier
-		model.write(System.out);
+		model.write(System.out,"Turtle");
+		// liste des déclarations dans le modèle
+		StmtIterator iter = model.listStatements();
+		
+		// affiche l'objet, le prédicat et le sujet de chaque déclaration
+		while (iter.hasNext()) {
+			Statement stmt = iter.nextStatement();// obtenir la prochaine déclaration
+			Resource subject = stmt.getSubject();// obtenir le sujet
+			Property predicate = stmt.getPredicate();// obtenir le prédicat
+			RDFNode object = stmt.getObject();// obtenir l'objet
+			
+			System.out.print(subject.toString());
+			System.out.print(" " + predicate.toString() + " ");
+			if(object instanceof Resource){
+			   System.out.print(object.toString());
+			}else{// l'objet est un littéral
+				System.out.print(" \"" + object.toString() + "\"");
+			}
+			System.out.println(" .");
+		}
 	}
 }

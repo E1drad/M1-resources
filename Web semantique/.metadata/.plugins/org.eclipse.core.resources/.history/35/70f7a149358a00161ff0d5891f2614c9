@@ -17,12 +17,14 @@ import org.apache.jena.vocabulary.VCARD;
  */
 
 public class paf {
-	static final String inputFileName = "src/tp1/vc-db-1.rdf";
-	
+	// some definitions
+	static String personURI    = "http://somewhere/JohnSmith";
+	static String fullName     = "John Smith";
+
 	public static void main (String args[]) {
 	// créer un modèle vide
 	Model model = ModelFactory.createDefaultModel();
-	
+	String inputFileName = "input";
 	// utiliser le FileManager pour trouver le fichier d'entrée
 	InputStream in = FileManager.get().open( inputFileName );
 	if (in == null) {

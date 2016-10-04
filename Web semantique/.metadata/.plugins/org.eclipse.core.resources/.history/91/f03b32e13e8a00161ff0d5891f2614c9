@@ -24,20 +24,11 @@ public class paf {
     
 	public static void main (String args[]) {
 
-		Model model1 = ModelFactory.createDefaultModel();
-		Model model2 = ModelFactory.createDefaultModel();
-		InputStream in1 = FileManager.get().open(inputFileName2);		
-		if (in1 == null) {
-            throw new IllegalArgumentException( "File: " + inputFileName1 + " not found");
-        }
-        InputStream in2 = FileManager.get().open(inputFileName2);
-        if (in2 == null) {
-            throw new IllegalArgumentException( "File: " + inputFileName2 + " not found");
-        }
+		Model model1;
+		Model model2;
 		// lit les fichiers RDF/XML
-		model1.read(new InputStreamReader(in1), "");
-
-		model2.read(new InputStreamReader(in2), "");
+		model1.read(new InputStreamReader(inputFileName1), "");
+		model2.read(new InputStreamReader(inputFileName2), "");
 
 		// fusionne les modèles
 		Model model = model1.union(model2);

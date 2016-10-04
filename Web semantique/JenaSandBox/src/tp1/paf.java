@@ -20,18 +20,23 @@ public class paf {
 	static final String inputFileName = "src/tp1/vc-db-1.rdf";
 	
 	public static void main (String args[]) {
-		// créer un modèle vide
-		Model model = ModelFactory.createDefaultModel();
-		
-		// utiliser le FileManager pour trouver le fichier d'entrée
-		InputStream in = FileManager.get().open( inputFileName );
-		if (in == null) {
-			throw new IllegalArgumentException("Fichier: " + inputFileName + " non trouvé");
-		}
-		// lire le fichier RDF/XML
-		model.read(in, null);
-		
-		// l'écrire sur la sortie standard
-		model.write(System.out);
+		Model m = ModelFactory.createDefaultModel();
+		String nsA = "http://somewhere/else#";
+		String nsB = "http://nowhere/else#";
+		Resource root = m.createResource( nsA + "root" );
+		Property P = m.createProperty( nsA + "P" );
+		Property Q = m.createProperty( nsB + "Q" );
+		Resource x = m.createResource( nsA + "x" );
+		Resource y = m.createResource( nsA + "y" );
+		Resource z = m.createResource( nsA + "z" );
+		m.add( root, P, x ).add( root, P, y ).add( y, Q, z );
+		System.out.println( "# -- no special prefixes defined" );
+		m.write( System.out );
+		System.out.println( "# -- nsA defined" );
+		m.setNsPrefix( "nsA", nsA );
+		m.write( System.out );
+		System.out.println( "# -- nsA and cat defined" );
+		m.setNsPrefix( "cat", nsB );
+		m.write( System.out );
 	}
 }

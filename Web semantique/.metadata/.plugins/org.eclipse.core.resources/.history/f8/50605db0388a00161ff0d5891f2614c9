@@ -22,8 +22,8 @@ public class paf {
 	public static void main (String args[]) {
 		
 		Model m2 = ModelFactory.createDefaultModel();
-		m2.read("src/tp1/fragment.rdf");
-		m2.write(System.out);
+		m2.read( "src/tp1/fragment.rdf" );
+		m2.write( System.out );
 		
 	}
 }

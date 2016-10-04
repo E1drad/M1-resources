@@ -17,13 +17,10 @@ import org.apache.jena.vocabulary.VCARD;
  */
 
 public class paf {
-	static final String inputFileName = "src/tp1/vc-db-1.rdf";
 	
 	public static void main (String args[]) {
-		
 		Model m2 = ModelFactory.createDefaultModel();
-		m2.read("src/tp1/fragment.rdf");
-		m2.write(System.out);
-		
+		m2.read( "src/tp1/fragment.rdf" );
+		m2.write( System.out );
 	}
 }

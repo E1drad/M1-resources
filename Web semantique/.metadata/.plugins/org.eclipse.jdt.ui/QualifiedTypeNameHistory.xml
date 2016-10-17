@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.apache.jena.rdf.model.StmtIterator"/>
+<fullyQualifiedTypeName name="org.apache.jena.rdf.model.Statement"/>
+<fullyQualifiedTypeName name="org.apache.jena.rdf.model.Property"/>
+<fullyQualifiedTypeName name="org.apache.jena.rdf.model.RDFNode"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="org.apache.jena.util.FileManager"/>
+<fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+<fullyQualifiedTypeName name="org.apache.jena.rdf.model.ResIterator"/>
+<fullyQualifiedTypeName name="org.apache.jena.rdf.model.NodeIterator"/>
+<fullyQualifiedTypeName name="org.apache.jena.rdf.model.Bag"/>
+<fullyQualifiedTypeName name="org.apache.jena.rdf.model.SimpleSelector"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="org.apache.jena.vocabulary.RDFS"/>
+</qualifiedTypeNameHistroy>

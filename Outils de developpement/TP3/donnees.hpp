@@ -29,6 +29,6 @@ public:
   void setColumns();
   void setDatas();
   
-}  
+};
 
 #endif /* DONNEES_HPP_ */

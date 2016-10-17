@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pdflib',['PDFlib',['../classPDFlib.html',1,'']]]
+  ['exception',['Exception',['../classPDFlib_1_1Exception.html',1,'PDFlib']]]
 ];

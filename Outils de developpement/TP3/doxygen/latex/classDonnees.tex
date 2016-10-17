@@ -1,0 +1,144 @@
+\hypertarget{classDonnees}{}\section{Donnees Class Reference}
+\label{classDonnees}\index{Donnees@{Donnees}}
+
+
+{\ttfamily \#include $<$donnees.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDonnees_a29a0763f255154038b260dccb7b024d5}{Donnees} (fstream file)
+\begin{DoxyCompactList}\small\item\em Constructor of the \hyperlink{classDonnees}{Donnees} class. \end{DoxyCompactList}\item 
+\hypertarget{classDonnees_a32538936d4181628ec1cc7f6533436d0}{}\label{classDonnees_a32538936d4181628ec1cc7f6533436d0} 
+\hyperlink{classDonnees_a32538936d4181628ec1cc7f6533436d0}{$\sim$\+Donnees} ()
+\begin{DoxyCompactList}\small\item\em Destructor of the \hyperlink{classDonnees}{Donnees} class. \end{DoxyCompactList}\item 
+std\+::vector$<$ string $>$ \hyperlink{classDonnees_a90424f557bd469396ea30c13ed08730e}{get\+Metadatas} ()
+\begin{DoxyCompactList}\small\item\em Getter of Metadata. \end{DoxyCompactList}\item 
+std\+::vector$<$ string $>$ \hyperlink{classDonnees_a14bd2cef1e2356f8c9dfbb768ccd8da2}{get\+Columns} ()
+\begin{DoxyCompactList}\small\item\em Getter of columns. \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \hyperlink{classDonnees_a99d5a923035f15d8fbd8c8a519cf5848}{get\+Datas} ()
+\begin{DoxyCompactList}\small\item\em Getter of data. \end{DoxyCompactList}\item 
+void \hyperlink{classDonnees_aaea7bb6bb8f2b88645847429d71ba3f6}{set\+Metadatas} (vector$<$ string $>$ meta)
+\begin{DoxyCompactList}\small\item\em Setter of metadata. \end{DoxyCompactList}\item 
+void \hyperlink{classDonnees_a5b8c1acea8365a6a28336170020b4ce2}{set\+Columns} (vector$<$ string $>$ column)
+\begin{DoxyCompactList}\small\item\em Setter of columns. \end{DoxyCompactList}\item 
+void \hyperlink{classDonnees_a1887d61042d17e57978cbd85da118502}{set\+Datas} (vector$<$ double $>$ data)
+\begin{DoxyCompactList}\small\item\em Setter of data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Header file of donnees.\+cpp \begin{DoxyVerb}@Version: 1.0
+@Date:    17 october 2016
+@Authors: Charles BEGAUDEAU Charlene SERVANTIE\end{DoxyVerb}
+
+
+\hyperlink{classDonnees}{Donnees} is the class representing the data from files with its metadata, column names and values 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classDonnees_a29a0763f255154038b260dccb7b024d5}{}\label{classDonnees_a29a0763f255154038b260dccb7b024d5} 
+\index{Donnees@{Donnees}!Donnees@{Donnees}}
+\index{Donnees@{Donnees}!Donnees@{Donnees}}
+\subsubsection{\texorpdfstring{Donnees()}{Donnees()}}
+{\footnotesize\ttfamily Donnees\+::\+Donnees (\begin{DoxyParamCaption}\item[{fstream}]{file }\end{DoxyParamCaption})}
+
+
+
+Constructor of the \hyperlink{classDonnees}{Donnees} class. 
+
+Takes a file and parses it into the data 
+\begin{DoxyParams}{Parameters}
+{\em file} & is a fstream \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDonnees_a14bd2cef1e2356f8c9dfbb768ccd8da2}{}\label{classDonnees_a14bd2cef1e2356f8c9dfbb768ccd8da2} 
+\index{Donnees@{Donnees}!get\+Columns@{get\+Columns}}
+\index{get\+Columns@{get\+Columns}!Donnees@{Donnees}}
+\subsubsection{\texorpdfstring{get\+Columns()}{getColumns()}}
+{\footnotesize\ttfamily std\+::vector$<$string$>$ Donnees\+::get\+Columns (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter of columns. 
+
+Gets the column names \begin{DoxyReturn}{Returns}
+a vector of strings 
+\end{DoxyReturn}
+\hypertarget{classDonnees_a99d5a923035f15d8fbd8c8a519cf5848}{}\label{classDonnees_a99d5a923035f15d8fbd8c8a519cf5848} 
+\index{Donnees@{Donnees}!get\+Datas@{get\+Datas}}
+\index{get\+Datas@{get\+Datas}!Donnees@{Donnees}}
+\subsubsection{\texorpdfstring{get\+Datas()}{getDatas()}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ Donnees\+::get\+Datas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter of data. 
+
+Gets the data \begin{DoxyReturn}{Returns}
+a vector of double 
+\end{DoxyReturn}
+\hypertarget{classDonnees_a90424f557bd469396ea30c13ed08730e}{}\label{classDonnees_a90424f557bd469396ea30c13ed08730e} 
+\index{Donnees@{Donnees}!get\+Metadatas@{get\+Metadatas}}
+\index{get\+Metadatas@{get\+Metadatas}!Donnees@{Donnees}}
+\subsubsection{\texorpdfstring{get\+Metadatas()}{getMetadatas()}}
+{\footnotesize\ttfamily std\+::vector$<$string$>$ Donnees\+::get\+Metadatas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter of Metadata. 
+
+Gets the metadata \begin{DoxyReturn}{Returns}
+a vector of strings 
+\end{DoxyReturn}
+\hypertarget{classDonnees_a5b8c1acea8365a6a28336170020b4ce2}{}\label{classDonnees_a5b8c1acea8365a6a28336170020b4ce2} 
+\index{Donnees@{Donnees}!set\+Columns@{set\+Columns}}
+\index{set\+Columns@{set\+Columns}!Donnees@{Donnees}}
+\subsubsection{\texorpdfstring{set\+Columns()}{setColumns()}}
+{\footnotesize\ttfamily void Donnees\+::set\+Columns (\begin{DoxyParamCaption}\item[{vector$<$ string $>$}]{column }\end{DoxyParamCaption})}
+
+
+
+Setter of columns. 
+
+Sets the column names 
+\begin{DoxyParams}{Parameters}
+{\em column} & \+: a vector of strings \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDonnees_a1887d61042d17e57978cbd85da118502}{}\label{classDonnees_a1887d61042d17e57978cbd85da118502} 
+\index{Donnees@{Donnees}!set\+Datas@{set\+Datas}}
+\index{set\+Datas@{set\+Datas}!Donnees@{Donnees}}
+\subsubsection{\texorpdfstring{set\+Datas()}{setDatas()}}
+{\footnotesize\ttfamily void Donnees\+::set\+Datas (\begin{DoxyParamCaption}\item[{vector$<$ double $>$}]{data }\end{DoxyParamCaption})}
+
+
+
+Setter of data. 
+
+Sets the data 
+\begin{DoxyParams}{Parameters}
+{\em data} & \+: a vector of double \\
+\hline
+\end{DoxyParams}
+\hypertarget{classDonnees_aaea7bb6bb8f2b88645847429d71ba3f6}{}\label{classDonnees_aaea7bb6bb8f2b88645847429d71ba3f6} 
+\index{Donnees@{Donnees}!set\+Metadatas@{set\+Metadatas}}
+\index{set\+Metadatas@{set\+Metadatas}!Donnees@{Donnees}}
+\subsubsection{\texorpdfstring{set\+Metadatas()}{setMetadatas()}}
+{\footnotesize\ttfamily void Donnees\+::set\+Metadatas (\begin{DoxyParamCaption}\item[{vector$<$ string $>$}]{meta }\end{DoxyParamCaption})}
+
+
+
+Setter of metadata. 
+
+Sets the metadata 
+\begin{DoxyParams}{Parameters}
+{\em meta} & \+: a vector of strings \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+donnees.\+hpp\end{DoxyCompactItemize}

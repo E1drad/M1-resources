@@ -1,0 +1,469 @@
+\hypertarget{classPDFlib}{}\section{P\+D\+Flib Class Reference}
+\label{classPDFlib}\index{P\+D\+Flib@{P\+D\+Flib}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classPDFlib_1_1Exception}{Exception}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classPDFlib_a63a60e9b1c4c18e6db742f85011510f3}{}\label{classPDFlib_a63a60e9b1c4c18e6db742f85011510f3} 
+{\bfseries P\+D\+Flib} (allocproc\+\_\+t allocproc=N\+U\+LL, reallocproc\+\_\+t reallocproc=N\+U\+LL, freeproc\+\_\+t freeproc=N\+U\+LL, void $\ast$opaque=N\+U\+LL)
+\item 
+\hypertarget{classPDFlib_a83cf7a11d217af0e33e6dca6267965c4}{}\label{classPDFlib_a83cf7a11d217af0e33e6dca6267965c4} 
+void {\bfseries activate\+\_\+item} (int id)
+\item 
+\hypertarget{classPDFlib_afbf7e219b67e0099610963c1ca9b6dca}{}\label{classPDFlib_afbf7e219b67e0099610963c1ca9b6dca} 
+int {\bfseries add\+\_\+bookmark} (std\+::string text, int parent, int p\+\_\+open)
+\item 
+\hypertarget{classPDFlib_a32faa0f4597b6dceacd54a4a5497823d}{}\label{classPDFlib_a32faa0f4597b6dceacd54a4a5497823d} 
+void {\bfseries add\+\_\+launchlink} (double llx, double lly, double urx, double ury, std\+::string filename)
+\item 
+\hypertarget{classPDFlib_a2d47dcbd27a69e9c1c02ca608f927ab7}{}\label{classPDFlib_a2d47dcbd27a69e9c1c02ca608f927ab7} 
+void {\bfseries add\+\_\+locallink} (double llx, double lly, double urx, double ury, int page, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_a16845662dabe0494d69b016846f2adcc}{}\label{classPDFlib_a16845662dabe0494d69b016846f2adcc} 
+void {\bfseries add\+\_\+nameddest} (std\+::string name, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_ab054c136755f297058ac9812adefafec}{}\label{classPDFlib_ab054c136755f297058ac9812adefafec} 
+void {\bfseries add\+\_\+note} (double llx, double lly, double urx, double ury, std\+::string contents, std\+::string title, std\+::string icon, int p\+\_\+open)
+\item 
+\hypertarget{classPDFlib_acc2002bc0e060620bfe97eae7dcc9371}{}\label{classPDFlib_acc2002bc0e060620bfe97eae7dcc9371} 
+void {\bfseries add\+\_\+pdflink} (double llx, double lly, double urx, double ury, std\+::string filename, int page, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_a153ce04a9c160a24d13763f8ba6578fa}{}\label{classPDFlib_a153ce04a9c160a24d13763f8ba6578fa} 
+int {\bfseries add\+\_\+table\+\_\+cell} (int table, int column, int row, std\+::string text, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_a44f52fd96b6152a2b4ae4f71cebcf36b}{}\label{classPDFlib_a44f52fd96b6152a2b4ae4f71cebcf36b} 
+int {\bfseries add\+\_\+textflow} (int textflow, std\+::string text, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_a7561fadef64e392f98d047d5b6e79946}{}\label{classPDFlib_a7561fadef64e392f98d047d5b6e79946} 
+void {\bfseries add\+\_\+thumbnail} (int image)
+\item 
+\hypertarget{classPDFlib_afdba46325698218399dda4b415204edd}{}\label{classPDFlib_afdba46325698218399dda4b415204edd} 
+void {\bfseries add\+\_\+weblink} (double llx, double lly, double urx, double ury, std\+::string url)
+\item 
+\hypertarget{classPDFlib_aee884c54b243c01230926f493f06eaf9}{}\label{classPDFlib_aee884c54b243c01230926f493f06eaf9} 
+void {\bfseries arc} (double x, double y, double r, double alpha, double beta)
+\item 
+\hypertarget{classPDFlib_a061eb6bb4e041c52547cf9d58416ddac}{}\label{classPDFlib_a061eb6bb4e041c52547cf9d58416ddac} 
+void {\bfseries arcn} (double x, double y, double r, double alpha, double beta)
+\item 
+\hypertarget{classPDFlib_a911b3c91d2670200cdb3b78742fc6980}{}\label{classPDFlib_a911b3c91d2670200cdb3b78742fc6980} 
+void {\bfseries attach\+\_\+file} (double llx, double lly, double urx, double ury, std\+::string filename, std\+::string description, std\+::string author, std\+::string mimetype, std\+::string icon)
+\item 
+\hypertarget{classPDFlib_aacb38db7f6eada3409fb616bd823e79f}{}\label{classPDFlib_aacb38db7f6eada3409fb616bd823e79f} 
+int {\bfseries begin\+\_\+document} (std\+::string filename, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_a0c3289b502ca325c222c4df9c8318d1f}{}\label{classPDFlib_a0c3289b502ca325c222c4df9c8318d1f} 
+void {\bfseries begin\+\_\+document\+\_\+callback} (writeproc\+\_\+t writeproc, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_a3f8a5ee80b6c632c1687e3100ef4a1bb}{}\label{classPDFlib_a3f8a5ee80b6c632c1687e3100ef4a1bb} 
+void {\bfseries begin\+\_\+font} (std\+::string fontname, double a, double b, double c, double d, double e, double f, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_adeb917523298b8df07d5a0161dca81ca}{}\label{classPDFlib_adeb917523298b8df07d5a0161dca81ca} 
+void {\bfseries begin\+\_\+glyph} (std\+::string glyphname, double wx, double llx, double lly, double urx, double ury)
+\item 
+\hypertarget{classPDFlib_a0df23d2d6f9a6a100878bad9b8936e6c}{}\label{classPDFlib_a0df23d2d6f9a6a100878bad9b8936e6c} 
+int {\bfseries begin\+\_\+item} (std\+::string tag, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_ac35bac599211da4f97c13bf5d752ca4f}{}\label{classPDFlib_ac35bac599211da4f97c13bf5d752ca4f} 
+void {\bfseries begin\+\_\+layer} (int layer)
+\item 
+\hypertarget{classPDFlib_a311dccd5a1ac04646673e6eaeea476ae}{}\label{classPDFlib_a311dccd5a1ac04646673e6eaeea476ae} 
+void {\bfseries begin\+\_\+page} (double width, double height)
+\item 
+\hypertarget{classPDFlib_ac656d2651dab7cd9dc27e6fb7e24674b}{}\label{classPDFlib_ac656d2651dab7cd9dc27e6fb7e24674b} 
+void {\bfseries begin\+\_\+page\+\_\+ext} (double width, double height, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_a4f448cf3fb5e4376c8f5665b209309b2}{}\label{classPDFlib_a4f448cf3fb5e4376c8f5665b209309b2} 
+int {\bfseries begin\+\_\+pattern} (double width, double height, double xstep, double ystep, int painttype)
+\item 
+\hypertarget{classPDFlib_a0a17dc423a0b09f0fe3da38184a0c58a}{}\label{classPDFlib_a0a17dc423a0b09f0fe3da38184a0c58a} 
+int {\bfseries begin\+\_\+template} (double width, double height)
+\item 
+\hypertarget{classPDFlib_af52208d3c75b94fa260e930379add01e}{}\label{classPDFlib_af52208d3c75b94fa260e930379add01e} 
+int {\bfseries begin\+\_\+template\+\_\+ext} (double width, double height, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_a829708ea81ca5fdc782b41671d289024}{}\label{classPDFlib_a829708ea81ca5fdc782b41671d289024} 
+void {\bfseries circle} (double x, double y, double r)
+\item 
+\hypertarget{classPDFlib_ac975ffef2d14cd63e59c2721934ccc7c}{}\label{classPDFlib_ac975ffef2d14cd63e59c2721934ccc7c} 
+void {\bfseries clip} ()
+\item 
+\hypertarget{classPDFlib_ae9242dfb19f5367436a6964546d9d4e6}{}\label{classPDFlib_ae9242dfb19f5367436a6964546d9d4e6} 
+void {\bfseries close} ()
+\item 
+\hypertarget{classPDFlib_ac063ee8ba65df5795c8f488a2238cf7f}{}\label{classPDFlib_ac063ee8ba65df5795c8f488a2238cf7f} 
+void {\bfseries close\+\_\+image} (int image)
+\item 
+\hypertarget{classPDFlib_a8b4d6ae7f6df6ac04d54b3f1449849f1}{}\label{classPDFlib_a8b4d6ae7f6df6ac04d54b3f1449849f1} 
+void {\bfseries close\+\_\+pdi} (int doc)
+\item 
+\hypertarget{classPDFlib_aefcbc8ddb1ef96388f6f2c61f7e05d7e}{}\label{classPDFlib_aefcbc8ddb1ef96388f6f2c61f7e05d7e} 
+void {\bfseries close\+\_\+pdi\+\_\+document} (int doc)
+\item 
+\hypertarget{classPDFlib_abba8fa8b8ef399bcb6d57b40bd83a5ee}{}\label{classPDFlib_abba8fa8b8ef399bcb6d57b40bd83a5ee} 
+void {\bfseries close\+\_\+pdi\+\_\+page} (int page)
+\item 
+\hypertarget{classPDFlib_a75f331c8e3dda754cfc4acd372366917}{}\label{classPDFlib_a75f331c8e3dda754cfc4acd372366917} 
+void {\bfseries closepath} ()
+\item 
+\hypertarget{classPDFlib_a8d3d85a5f00e71fa3127cc42ac5245a1}{}\label{classPDFlib_a8d3d85a5f00e71fa3127cc42ac5245a1} 
+void {\bfseries closepath\+\_\+fill\+\_\+stroke} ()
+\item 
+\hypertarget{classPDFlib_a926f4d493d0625eec0a5638a1318c661}{}\label{classPDFlib_a926f4d493d0625eec0a5638a1318c661} 
+void {\bfseries closepath\+\_\+stroke} ()
+\item 
+\hypertarget{classPDFlib_aad54672cea67b8d25f68ae735cf1f4ca}{}\label{classPDFlib_aad54672cea67b8d25f68ae735cf1f4ca} 
+void {\bfseries concat} (double a, double b, double c, double d, double e, double f)
+\item 
+\hypertarget{classPDFlib_a4ee3d13f4de6de4dd63f2430c2fb1ee2}{}\label{classPDFlib_a4ee3d13f4de6de4dd63f2430c2fb1ee2} 
+void {\bfseries continue\+\_\+text} (std\+::string text)
+\item 
+\hypertarget{classPDFlib_ac3fb64cece3d7fbc0b5dd760e5ce490a}{}\label{classPDFlib_ac3fb64cece3d7fbc0b5dd760e5ce490a} 
+int {\bfseries create\+\_\+3dview} (std\+::string username, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_abd882370ecf1a79ddf66c208817ab561}{}\label{classPDFlib_abd882370ecf1a79ddf66c208817ab561} 
+int {\bfseries create\+\_\+action} (std\+::string type, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_af75e9080056e73d1aee1ad0277ac99eb}{}\label{classPDFlib_af75e9080056e73d1aee1ad0277ac99eb} 
+void {\bfseries create\+\_\+annotation} (double llx, double lly, double urx, double ury, std\+::string type, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_a0ad6d073c261b0b69343fbc2aec77e61}{}\label{classPDFlib_a0ad6d073c261b0b69343fbc2aec77e61} 
+int {\bfseries create\+\_\+bookmark} (std\+::string text, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_adf5520b414e9426b73d375cfbb142a20}{}\label{classPDFlib_adf5520b414e9426b73d375cfbb142a20} 
+void {\bfseries create\+\_\+field} (double llx, double lly, double urx, double ury, std\+::string name, std\+::string type, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_a44fb65e6533101477d39fde1730c92e6}{}\label{classPDFlib_a44fb65e6533101477d39fde1730c92e6} 
+void {\bfseries create\+\_\+fieldgroup} (std\+::string name, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_ae2eabf14be762f2999aedd15a1626234}{}\label{classPDFlib_ae2eabf14be762f2999aedd15a1626234} 
+int {\bfseries create\+\_\+gstate} (std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_a208ad8e80e2733820d54e6fb4f6313b8}{}\label{classPDFlib_a208ad8e80e2733820d54e6fb4f6313b8} 
+void {\bfseries create\+\_\+pvf} (std\+::string filename, const void $\ast$data, size\+\_\+t size, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_a9b80d68d417defcc9547b007c61b8877}{}\label{classPDFlib_a9b80d68d417defcc9547b007c61b8877} 
+int {\bfseries create\+\_\+textflow} (std\+::string text, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_ae331bf087034fdc7961fbc95db5479a6}{}\label{classPDFlib_ae331bf087034fdc7961fbc95db5479a6} 
+void {\bfseries curveto} (double x1, double y1, double x2, double y2, double x3, double y3)
+\item 
+\hypertarget{classPDFlib_a9ee76ee9081c4ef79c378ad4ed62df58}{}\label{classPDFlib_a9ee76ee9081c4ef79c378ad4ed62df58} 
+int {\bfseries define\+\_\+layer} (std\+::string name, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_a60c311c1176f37551fade62b15e260fa}{}\label{classPDFlib_a60c311c1176f37551fade62b15e260fa} 
+int {\bfseries delete\+\_\+pvf} (std\+::string filename)
+\item 
+\hypertarget{classPDFlib_a87643d5d18be98c83ae636b6e3013e8f}{}\label{classPDFlib_a87643d5d18be98c83ae636b6e3013e8f} 
+void {\bfseries delete\+\_\+table} (int table, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_ac4562f4944113165c37d27c3f2481412}{}\label{classPDFlib_ac4562f4944113165c37d27c3f2481412} 
+void {\bfseries delete\+\_\+textflow} (int textflow)
+\item 
+\hypertarget{classPDFlib_a83ebfdf9ada3df0634b6748aa2d27eff}{}\label{classPDFlib_a83ebfdf9ada3df0634b6748aa2d27eff} 
+void {\bfseries encoding\+\_\+set\+\_\+char} (std\+::string encoding, int slot, std\+::string glyphname, int uv)
+\item 
+\hypertarget{classPDFlib_aadbf95532d240e683aeda234624c7f61}{}\label{classPDFlib_aadbf95532d240e683aeda234624c7f61} 
+void {\bfseries end\+\_\+document} (std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_ad38e3338e0217a90ff322083b7d66843}{}\label{classPDFlib_ad38e3338e0217a90ff322083b7d66843} 
+void {\bfseries end\+\_\+font} ()
+\item 
+\hypertarget{classPDFlib_a75da9905bdccda79115aa724a7aff2bd}{}\label{classPDFlib_a75da9905bdccda79115aa724a7aff2bd} 
+void {\bfseries end\+\_\+glyph} ()
+\item 
+\hypertarget{classPDFlib_a1052c7d1cb2993e32341718e9c36c30c}{}\label{classPDFlib_a1052c7d1cb2993e32341718e9c36c30c} 
+void {\bfseries end\+\_\+item} (int id)
+\item 
+\hypertarget{classPDFlib_a485ab7dd0996da8194e768e1c97eed21}{}\label{classPDFlib_a485ab7dd0996da8194e768e1c97eed21} 
+void {\bfseries end\+\_\+layer} ()
+\item 
+\hypertarget{classPDFlib_ad155354f3b07ccf69bc82000211a4018}{}\label{classPDFlib_ad155354f3b07ccf69bc82000211a4018} 
+void {\bfseries end\+\_\+page} ()
+\item 
+\hypertarget{classPDFlib_aaeb1219f151a8b54e2c02e4e4633856b}{}\label{classPDFlib_aaeb1219f151a8b54e2c02e4e4633856b} 
+void {\bfseries end\+\_\+page\+\_\+ext} (std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_ac7a93102d044e6c8bd06d2a83c6b66f7}{}\label{classPDFlib_ac7a93102d044e6c8bd06d2a83c6b66f7} 
+void {\bfseries end\+\_\+pattern} ()
+\item 
+\hypertarget{classPDFlib_a67057f952266b4cbdd737b61a85090f7}{}\label{classPDFlib_a67057f952266b4cbdd737b61a85090f7} 
+void {\bfseries end\+\_\+template} ()
+\item 
+\hypertarget{classPDFlib_a7d53283bf3787237ca080b1ee6897a26}{}\label{classPDFlib_a7d53283bf3787237ca080b1ee6897a26} 
+void {\bfseries endpath} ()
+\item 
+\hypertarget{classPDFlib_a0a698c3eb4f96ec63cf9636074fd7870}{}\label{classPDFlib_a0a698c3eb4f96ec63cf9636074fd7870} 
+void {\bfseries fill} ()
+\item 
+\hypertarget{classPDFlib_a584ee614b174cc35d99f0571227df21a}{}\label{classPDFlib_a584ee614b174cc35d99f0571227df21a} 
+int {\bfseries fill\+\_\+imageblock} (int page, std\+::string blockname, int image, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_af9c0c51770f3296907a630314f04dd03}{}\label{classPDFlib_af9c0c51770f3296907a630314f04dd03} 
+int {\bfseries fill\+\_\+pdfblock} (int page, std\+::string blockname, int contents, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_ad89aba96aa68737607b7c5f4f419bf33}{}\label{classPDFlib_ad89aba96aa68737607b7c5f4f419bf33} 
+int {\bfseries fill\+\_\+textblock} (int page, std\+::string blockname, std\+::string text, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_af075d64fe8d704204883c548b7d48460}{}\label{classPDFlib_af075d64fe8d704204883c548b7d48460} 
+void {\bfseries fill\+\_\+stroke} ()
+\item 
+\hypertarget{classPDFlib_a07e3c184619af04184b342136c97b30a}{}\label{classPDFlib_a07e3c184619af04184b342136c97b30a} 
+int {\bfseries findfont} (std\+::string fontname, std\+::string encoding, int embed)
+\item 
+\hypertarget{classPDFlib_ae190bced58224501fce22ab778e7855b}{}\label{classPDFlib_ae190bced58224501fce22ab778e7855b} 
+void {\bfseries fit\+\_\+image} (int image, double x, double y, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_aec960d2bb746ba340bcb0e275393aea4}{}\label{classPDFlib_aec960d2bb746ba340bcb0e275393aea4} 
+void {\bfseries fit\+\_\+pdi\+\_\+page} (int page, double x, double y, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_a8049e74f5bd6a63ed988dcbca887ea40}{}\label{classPDFlib_a8049e74f5bd6a63ed988dcbca887ea40} 
+std\+::string {\bfseries fit\+\_\+table} (int table, double llx, double lly, double urx, double ury, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_ad8d24aaccdc61e3f482594269e7db1de}{}\label{classPDFlib_ad8d24aaccdc61e3f482594269e7db1de} 
+std\+::string {\bfseries fit\+\_\+textflow} (int textflow, double llx, double lly, double urx, double ury, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_ad451733ee7844848d649a1e1a551623c}{}\label{classPDFlib_ad451733ee7844848d649a1e1a551623c} 
+void {\bfseries fit\+\_\+textline} (std\+::string text, double x, double y, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_a84199831e344c9705e47ea184e92a650}{}\label{classPDFlib_a84199831e344c9705e47ea184e92a650} 
+std\+::string {\bfseries get\+\_\+apiname} ()
+\item 
+\hypertarget{classPDFlib_a29b236d867ff4067adf448ce031283eb}{}\label{classPDFlib_a29b236d867ff4067adf448ce031283eb} 
+const char $\ast$ {\bfseries get\+\_\+buffer} (long $\ast$size)
+\item 
+\hypertarget{classPDFlib_aa36d3f54ab4dffc2efaad369bb9257f8}{}\label{classPDFlib_aa36d3f54ab4dffc2efaad369bb9257f8} 
+std\+::string {\bfseries get\+\_\+errmsg} ()
+\item 
+\hypertarget{classPDFlib_aa22b55c8aeb8c8bc42cc286003c29074}{}\label{classPDFlib_aa22b55c8aeb8c8bc42cc286003c29074} 
+int {\bfseries get\+\_\+errnum} ()
+\item 
+\hypertarget{classPDFlib_a5b52bcdf06c0ca3c3a26ac8e07665266}{}\label{classPDFlib_a5b52bcdf06c0ca3c3a26ac8e07665266} 
+void $\ast$ {\bfseries get\+\_\+opaque} ()
+\item 
+\hypertarget{classPDFlib_ad22c14b9973d0d40464ef06fa69d3272}{}\label{classPDFlib_ad22c14b9973d0d40464ef06fa69d3272} 
+std\+::string {\bfseries get\+\_\+parameter} (std\+::string key, double modifier)
+\item 
+\hypertarget{classPDFlib_a29235793f31c496e5882e9000b80045e}{}\label{classPDFlib_a29235793f31c496e5882e9000b80045e} 
+double {\bfseries get\+\_\+pdi\+\_\+value} (std\+::string key, int doc, int page, int reserved)
+\item 
+\hypertarget{classPDFlib_a7dad0e3b7c73641122eae3258a9fea15}{}\label{classPDFlib_a7dad0e3b7c73641122eae3258a9fea15} 
+std\+::string {\bfseries get\+\_\+pdi\+\_\+parameter} (std\+::string key, int doc, int page, int reserved, int $\ast$len=N\+U\+LL)
+\item 
+\hypertarget{classPDFlib_a203140e53fe8f2e3660f2173a88c6f5b}{}\label{classPDFlib_a203140e53fe8f2e3660f2173a88c6f5b} 
+double {\bfseries get\+\_\+value} (std\+::string key, double modifier)
+\item 
+\hypertarget{classPDFlib_a4691e67c4af969f8a30a27c67d0c7281}{}\label{classPDFlib_a4691e67c4af969f8a30a27c67d0c7281} 
+double {\bfseries info\+\_\+font} (int font, std\+::string keyword, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_ab87d9425f72659393e4c82a3b70ad29e}{}\label{classPDFlib_ab87d9425f72659393e4c82a3b70ad29e} 
+double {\bfseries info\+\_\+matchbox} (std\+::string boxname, int num, std\+::string keyword)
+\item 
+\hypertarget{classPDFlib_a8b9bee8fcc7b13463c134aadc202f237}{}\label{classPDFlib_a8b9bee8fcc7b13463c134aadc202f237} 
+double {\bfseries info\+\_\+table} (int table, std\+::string keyword)
+\item 
+\hypertarget{classPDFlib_a8c325dd615c090dbc8c3a1a2c6be1c27}{}\label{classPDFlib_a8c325dd615c090dbc8c3a1a2c6be1c27} 
+double {\bfseries info\+\_\+textflow} (int textflow, std\+::string keyword)
+\item 
+\hypertarget{classPDFlib_a5ae97dc66793508bab806074eb3aaf8e}{}\label{classPDFlib_a5ae97dc66793508bab806074eb3aaf8e} 
+double {\bfseries info\+\_\+textline} (std\+::string text, std\+::string keyword, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_abafce63a807f731025f6425f1cbf0702}{}\label{classPDFlib_abafce63a807f731025f6425f1cbf0702} 
+void {\bfseries initgraphics} ()
+\item 
+\hypertarget{classPDFlib_a2b424210d5622820e27cf6f089003b06}{}\label{classPDFlib_a2b424210d5622820e27cf6f089003b06} 
+void {\bfseries lineto} (double x, double y)
+\item 
+\hypertarget{classPDFlib_aea233d27c34fa1e9d60e9bc27278e27c}{}\label{classPDFlib_aea233d27c34fa1e9d60e9bc27278e27c} 
+int {\bfseries load\+\_\+3ddata} (std\+::string filename, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_a7a3fb08e85e9adbe33b834c82d9a7546}{}\label{classPDFlib_a7a3fb08e85e9adbe33b834c82d9a7546} 
+int {\bfseries load\+\_\+font} (std\+::string fontname, std\+::string encoding, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_a0e9a54de242086ebd19748c3ecf3a47d}{}\label{classPDFlib_a0e9a54de242086ebd19748c3ecf3a47d} 
+int {\bfseries load\+\_\+iccprofile} (std\+::string profilename, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_a6d69dea52622a7af8d6231e1ada76139}{}\label{classPDFlib_a6d69dea52622a7af8d6231e1ada76139} 
+int {\bfseries load\+\_\+image} (std\+::string imagetype, std\+::string filename, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_ad593e18f817501af814242eebe39902b}{}\label{classPDFlib_ad593e18f817501af814242eebe39902b} 
+int {\bfseries makespotcolor} (std\+::string spotname)
+\item 
+\hypertarget{classPDFlib_a4b04a1be188fcb180132f2aa4f0a357c}{}\label{classPDFlib_a4b04a1be188fcb180132f2aa4f0a357c} 
+void {\bfseries moveto} (double x, double y)
+\item 
+\hypertarget{classPDFlib_ad680c8f235044b05c2299f35facbe1a4}{}\label{classPDFlib_ad680c8f235044b05c2299f35facbe1a4} 
+int {\bfseries open\+\_\+\+C\+C\+I\+TT} (std\+::string filename, int width, int height, int Bit\+Reverse, int K, int Black\+Is1)
+\item 
+\hypertarget{classPDFlib_ad3b48373b17c17a9e8b491ef1da40bdf}{}\label{classPDFlib_ad3b48373b17c17a9e8b491ef1da40bdf} 
+int {\bfseries open\+\_\+file} (std\+::string filename)
+\item 
+\hypertarget{classPDFlib_aaf45ace35fe6f1b149f4f8d729dbd612}{}\label{classPDFlib_aaf45ace35fe6f1b149f4f8d729dbd612} 
+int {\bfseries open\+\_\+image} (std\+::string imagetype, std\+::string source, const char $\ast$data, long len, int width, int height, int components, int bpc, std\+::string params)
+\item 
+\hypertarget{classPDFlib_a11741eafa900b4490097cb913709b984}{}\label{classPDFlib_a11741eafa900b4490097cb913709b984} 
+int {\bfseries open\+\_\+image\+\_\+file} (std\+::string imagetype, std\+::string filename, std\+::string stringparam, int intparam)
+\item 
+\hypertarget{classPDFlib_a2ec7cc181d64f7baa8d08e74f2824ab8}{}\label{classPDFlib_a2ec7cc181d64f7baa8d08e74f2824ab8} 
+void {\bfseries open\+\_\+mem} (writeproc\+\_\+t writeproc)
+\item 
+\hypertarget{classPDFlib_a13d36d30ea9a98394589977fe877ae47}{}\label{classPDFlib_a13d36d30ea9a98394589977fe877ae47} 
+int {\bfseries open\+\_\+pdi} (std\+::string filename, std\+::string optlist, int reserved)
+\item 
+\hypertarget{classPDFlib_a0d18c17852e877905ab0310ecf1e0b37}{}\label{classPDFlib_a0d18c17852e877905ab0310ecf1e0b37} 
+int {\bfseries open\+\_\+pdi\+\_\+document} (std\+::string filename, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_ae1e065f5dcb8e50aad847deca22b8841}{}\label{classPDFlib_ae1e065f5dcb8e50aad847deca22b8841} 
+int {\bfseries open\+\_\+pdi\+\_\+page} (int doc, int pagenumber, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_a639288411ee0b9e98ffbdb34434f05ed}{}\label{classPDFlib_a639288411ee0b9e98ffbdb34434f05ed} 
+double {\bfseries pcos\+\_\+get\+\_\+number} (int doc, std\+::string path)
+\item 
+\hypertarget{classPDFlib_a3646a04ca4ada3420add8ee98a39dade}{}\label{classPDFlib_a3646a04ca4ada3420add8ee98a39dade} 
+std\+::string {\bfseries pcos\+\_\+get\+\_\+string} (int doc, std\+::string path)
+\item 
+\hypertarget{classPDFlib_ab6dfb9502a37bf9312cf0431ca297819}{}\label{classPDFlib_ab6dfb9502a37bf9312cf0431ca297819} 
+const unsigned char $\ast$ {\bfseries pcos\+\_\+get\+\_\+stream} (int doc, int $\ast$length, std\+::string optlist, std\+::string path)
+\item 
+\hypertarget{classPDFlib_a17390ec77d9d1b476870cf72fce905aa}{}\label{classPDFlib_a17390ec77d9d1b476870cf72fce905aa} 
+void {\bfseries place\+\_\+image} (int image, double x, double y, double p\+\_\+scale)
+\item 
+\hypertarget{classPDFlib_ad56800ffc54122dfde959dbd4b922331}{}\label{classPDFlib_ad56800ffc54122dfde959dbd4b922331} 
+void {\bfseries place\+\_\+pdi\+\_\+page} (int page, double x, double y, double sx, double sy)
+\item 
+\hypertarget{classPDFlib_a674e04d73bfe7ae771a60114445720a0}{}\label{classPDFlib_a674e04d73bfe7ae771a60114445720a0} 
+int {\bfseries process\+\_\+pdi} (int doc, int page, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_a3c9ab4d05bd6b8716d311c05c91af04a}{}\label{classPDFlib_a3c9ab4d05bd6b8716d311c05c91af04a} 
+void {\bfseries rect} (double x, double y, double width, double height)
+\item 
+\hypertarget{classPDFlib_a0e73e06c50b4adfe9bdf3d206b210442}{}\label{classPDFlib_a0e73e06c50b4adfe9bdf3d206b210442} 
+void {\bfseries restore} ()
+\item 
+\hypertarget{classPDFlib_ae9ae4ec9f2162c582fbd35ff9092c497}{}\label{classPDFlib_ae9ae4ec9f2162c582fbd35ff9092c497} 
+void {\bfseries resume\+\_\+page} (std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_a083f84661e2c6ae1af089ac7f48b3897}{}\label{classPDFlib_a083f84661e2c6ae1af089ac7f48b3897} 
+void {\bfseries rotate} (double phi)
+\item 
+\hypertarget{classPDFlib_a15c53a7de05f502273b2a9e977f0b91d}{}\label{classPDFlib_a15c53a7de05f502273b2a9e977f0b91d} 
+void {\bfseries save} ()
+\item 
+\hypertarget{classPDFlib_a34c2b8df5a25b153402144788f5108cf}{}\label{classPDFlib_a34c2b8df5a25b153402144788f5108cf} 
+void {\bfseries scale} (double sx, double sy)
+\item 
+\hypertarget{classPDFlib_ae32d8f048a4bcc36c4440e844685d83e}{}\label{classPDFlib_ae32d8f048a4bcc36c4440e844685d83e} 
+void {\bfseries set\+\_\+border\+\_\+color} (double red, double green, double blue)
+\item 
+\hypertarget{classPDFlib_aaf02e71f9941ea7f615579cbd70b1d75}{}\label{classPDFlib_aaf02e71f9941ea7f615579cbd70b1d75} 
+void {\bfseries set\+\_\+border\+\_\+dash} (double b, double w)
+\item 
+\hypertarget{classPDFlib_a0353836b9d1e47007aea5eb9573e4abf}{}\label{classPDFlib_a0353836b9d1e47007aea5eb9573e4abf} 
+void {\bfseries set\+\_\+border\+\_\+style} (std\+::string style, double width)
+\item 
+\hypertarget{classPDFlib_a3454c94557adb7486abbad059bbe98f2}{}\label{classPDFlib_a3454c94557adb7486abbad059bbe98f2} 
+void {\bfseries setfont} (int font, double fontsize)
+\item 
+\hypertarget{classPDFlib_ac40b1d868fb9430800c46667f49e16ff}{}\label{classPDFlib_ac40b1d868fb9430800c46667f49e16ff} 
+void {\bfseries set\+\_\+gstate} (int gstate)
+\item 
+\hypertarget{classPDFlib_a1679bc2cdc767964fe19993032704c65}{}\label{classPDFlib_a1679bc2cdc767964fe19993032704c65} 
+void {\bfseries set\+\_\+info} (std\+::string key, std\+::string value)
+\item 
+\hypertarget{classPDFlib_a3bf3c45ea844c50c81d1e6d1a399f7cf}{}\label{classPDFlib_a3bf3c45ea844c50c81d1e6d1a399f7cf} 
+void {\bfseries set\+\_\+layer\+\_\+dependency} (std\+::string type, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_abced8a3b9223a00e6a9fbf13aa2cf488}{}\label{classPDFlib_abced8a3b9223a00e6a9fbf13aa2cf488} 
+void {\bfseries set\+\_\+parameter} (std\+::string key, std\+::string value)
+\item 
+\hypertarget{classPDFlib_a68aaa2b104cbeff66f28478c5503b71c}{}\label{classPDFlib_a68aaa2b104cbeff66f28478c5503b71c} 
+void {\bfseries set\+\_\+text\+\_\+pos} (double x, double y)
+\item 
+\hypertarget{classPDFlib_a5fbc3e6d8843291ada8fabe40a106caf}{}\label{classPDFlib_a5fbc3e6d8843291ada8fabe40a106caf} 
+void {\bfseries set\+\_\+value} (std\+::string key, double value)
+\item 
+\hypertarget{classPDFlib_a45fca2a5dce286baa78e2394d83baa6f}{}\label{classPDFlib_a45fca2a5dce286baa78e2394d83baa6f} 
+void {\bfseries setcolor} (std\+::string fstype, std\+::string colorspace, double c1, double c2, double c3, double c4)
+\item 
+\hypertarget{classPDFlib_a45e9138f953e972ab2f09f076d105c7b}{}\label{classPDFlib_a45e9138f953e972ab2f09f076d105c7b} 
+void {\bfseries setdash} (double b, double w)
+\item 
+\hypertarget{classPDFlib_a54c49fec034612feaf38fad5df9f76b7}{}\label{classPDFlib_a54c49fec034612feaf38fad5df9f76b7} 
+void {\bfseries setdashpattern} (std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_a305e47f39351bc587c78c90cc4edabba}{}\label{classPDFlib_a305e47f39351bc587c78c90cc4edabba} 
+void {\bfseries setflat} (double flatness)
+\item 
+\hypertarget{classPDFlib_a60623dfccc99a7fd09b12c9b585092db}{}\label{classPDFlib_a60623dfccc99a7fd09b12c9b585092db} 
+void {\bfseries setlinecap} (int linecap)
+\item 
+\hypertarget{classPDFlib_a2940808d00b87a16074c03a074057a17}{}\label{classPDFlib_a2940808d00b87a16074c03a074057a17} 
+void {\bfseries setlinejoin} (int linejoin)
+\item 
+\hypertarget{classPDFlib_a383b08525b4c2acb9700e4e6e964a80a}{}\label{classPDFlib_a383b08525b4c2acb9700e4e6e964a80a} 
+void {\bfseries setlinewidth} (double width)
+\item 
+\hypertarget{classPDFlib_a3a8cc387192e3a2d0eceb04b004328f0}{}\label{classPDFlib_a3a8cc387192e3a2d0eceb04b004328f0} 
+void {\bfseries setmatrix} (double a, double b, double c, double d, double e, double f)
+\item 
+\hypertarget{classPDFlib_a63946229c4ae1512d5533459192b9198}{}\label{classPDFlib_a63946229c4ae1512d5533459192b9198} 
+void {\bfseries setmiterlimit} (double miter)
+\item 
+\hypertarget{classPDFlib_ac49a72864c82f10043e66ba6c1b5a0fb}{}\label{classPDFlib_ac49a72864c82f10043e66ba6c1b5a0fb} 
+void {\bfseries setpolydash} (float $\ast$darray, int length)
+\item 
+\hypertarget{classPDFlib_afdd28cd764f222f1c102323a42657643}{}\label{classPDFlib_afdd28cd764f222f1c102323a42657643} 
+int {\bfseries shading} (std\+::string shtype, double x0, double y0, double x1, double y1, double c1, double c2, double c3, double c4, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_af7936c5fdacd6363b41811f02e6bead9}{}\label{classPDFlib_af7936c5fdacd6363b41811f02e6bead9} 
+int {\bfseries shading\+\_\+pattern} (int shade, std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_acc1378fc57dce8d3fbdd218aaa95f8dc}{}\label{classPDFlib_acc1378fc57dce8d3fbdd218aaa95f8dc} 
+void {\bfseries shfill} (int shade)
+\item 
+\hypertarget{classPDFlib_aaa7923ae29e03873a5ef1e80156b75c6}{}\label{classPDFlib_aaa7923ae29e03873a5ef1e80156b75c6} 
+void {\bfseries show} (std\+::string text)
+\item 
+\hypertarget{classPDFlib_af282c4e9f187a86ac103ec9438722040}{}\label{classPDFlib_af282c4e9f187a86ac103ec9438722040} 
+int {\bfseries show\+\_\+boxed} (std\+::string text, double left, double top, double width, double height, std\+::string hmode, std\+::string feature)
+\item 
+\hypertarget{classPDFlib_a28f2a9cae7188472df3a0d75e7bac6ac}{}\label{classPDFlib_a28f2a9cae7188472df3a0d75e7bac6ac} 
+void {\bfseries show\+\_\+xy} (std\+::string text, double x, double y)
+\item 
+\hypertarget{classPDFlib_a66323e008c1980539c58a2647af31b1a}{}\label{classPDFlib_a66323e008c1980539c58a2647af31b1a} 
+void {\bfseries skew} (double alpha, double beta)
+\item 
+\hypertarget{classPDFlib_afd8b4b2ff6fa254cc386047bddfbede1}{}\label{classPDFlib_afd8b4b2ff6fa254cc386047bddfbede1} 
+double {\bfseries stringwidth} (std\+::string text, int font, double fontsize)
+\item 
+\hypertarget{classPDFlib_ab212bd6e1bc82f8f00f807438218bc5d}{}\label{classPDFlib_ab212bd6e1bc82f8f00f807438218bc5d} 
+void {\bfseries stroke} ()
+\item 
+\hypertarget{classPDFlib_ac047054d3779c38b144b3f5dbd6b81b8}{}\label{classPDFlib_ac047054d3779c38b144b3f5dbd6b81b8} 
+void {\bfseries suspend\+\_\+page} (std\+::string optlist)
+\item 
+\hypertarget{classPDFlib_abcecfeb7a7e76092ffe5e222dbcbea25}{}\label{classPDFlib_abcecfeb7a7e76092ffe5e222dbcbea25} 
+void {\bfseries translate} (double tx, double ty)
+\item 
+\hypertarget{classPDFlib_acd5ccd9fb08470613c9bbb976995a034}{}\label{classPDFlib_acd5ccd9fb08470613c9bbb976995a034} 
+std\+::string {\bfseries utf16\+\_\+to\+\_\+utf8} (std\+::string utf16string)
+\item 
+\hypertarget{classPDFlib_af94465908bf96f42f2746734205ea70d}{}\label{classPDFlib_af94465908bf96f42f2746734205ea70d} 
+std\+::string {\bfseries utf8\+\_\+to\+\_\+utf16} (std\+::string utf8string, std\+::string format)
+\item 
+\hypertarget{classPDFlib_a2fc66f507a5c98e6dfffd3dc7015b381}{}\label{classPDFlib_a2fc66f507a5c98e6dfffd3dc7015b381} 
+std\+::string {\bfseries utf32\+\_\+to\+\_\+utf16} (std\+::string utf32string, std\+::string ordering)
+\item 
+\hypertarget{classPDFlib_aa4dc2e0ce0aed19151b9bc7ea8824e0f}{}\label{classPDFlib_aa4dc2e0ce0aed19151b9bc7ea8824e0f} 
+void {\bfseries xshow} (std\+::string text, const double $\ast$xadvancelist)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+pdflib.\+hpp\item 
+pdflib.\+cpp\end{DoxyCompactItemize}

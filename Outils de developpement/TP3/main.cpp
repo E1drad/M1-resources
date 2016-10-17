@@ -18,7 +18,10 @@
 
 
 /**
- * Main function that loads the PDFlib and makes the pdf out of the input file
+ * \brief	Main function that loads the PDFlib and makes the pdf out of the input file.
+ * \details	Main function load PFDlib and try to open the input file, it throws an exception
+ * if the file does not exist or if the composition of the input file is incorrect.
+ * \param	args string the name of the input file.
  */
 int main(string args){
 	try {
